@@ -7,35 +7,51 @@
 > Nếu chia sẻ, **vui lòng ghi rõ nguồn hoặc tên tác giả**.  
 
 ---
+# 📦 Nightmarket sgmodule Collection
+Tổng hợp các script `.sgmodule` dành cho Loon/Surge/Stash — đã được Việt hóa và chuẩn hóa theo phong cách Nightmarket.
 
-# 📺 Bilibili Premium 2025 – Nightmarket
-
-📸 **Tối ưu trải nghiệm Bilibili trên iOS**,loại bỏ quảng cáo, tinh chỉnh giao diện và mở khoá một số tính năng nâng cao thông qua Shadowrocket. **Shadowrocket (iOS)**.
+> 🛠 **Phân phối bởi:** [Nightmarket Server](https://discord.gg/juY9tw5AJY)  
+---
 
 ---
 
-# 📺 Bilibili Premium 2025 – Nightmarket
-
-✨ **Tối ưu trải nghiệm Bilibili trên iOS**, loại bỏ quảng cáo, tinh chỉnh giao diện và mở khoá một số tính năng nâng cao thông qua Shadowrocket.
-
----
-
-## 📌 Tính năng chính
-
-- 🚫 **Chặn quảng cáo trong ứng dụng**, bao gồm cả video và banner
-- 🧹 **Xoá các module đề xuất không cần thiết** như splash screen, event popup
-- 🗨️ **Lọc bỏ bình luận quảng cáo được ghim trên cùng**
-- 📺 **Ẩn/hiện trung tâm sáng tạo**, tab phát trực tiếp hoặc đề xuất tùy chỉnh
-- 🎯 **Tùy chỉnh nội dung hiển thị dựa trên sở thích** (ví dụ: ẩn tính năng "không phù hợp")
-- 🛠️ **Tích hợp đầy đủ MITM, Rewrite, Script, Header/Body xử lý nâng cao**
+## ☁️ 1.1.1.1 with WARP – Cloudflare
+- **Mô tả:** WARP – bảng điều khiển giám sát & trích xuất thông tin node.
+- **Tác giả:** VirgilClyne & R·E  
 
 ---
 
-## 🧠 Thông tin kỹ thuật
+## 🍏 Tự động tham gia TestFlight
+- **Mô tả:** Tự động theo dõi slot TestFlight – khi có chỗ trống sẽ tự động tham gia.
+- **Tác giả:** DecoAri, xream  
 
-- **Tác giả gốc**: `kokoryh`
-- **Phân phối lại bởi**: `Nightmarket Server`
+---
 
+## 🧱 Meitu Xiuxiu – Gỡ Quảng Cáo
+- **Mô tả:** Loại bỏ quảng cáo khi mở app, banner khuyến mãi và tinh gọn giao diện "Tôi".
+- **Tác giả:** 可莉🅥  
+
+---
+
+## 🎵 iTunes – Mở Khóa Tính Năng VIP
+- **Mô tả:** Tổng hợp plugin mở khóa các tính năng trong hệ sinh thái iTunes. Vào phần "Cài đặt" để chọn script từ các tác giả gốc.
+- **Tác giả:** chxm1023, ddgksf2013, Guding88, Yu9191  
+---
+
+## 📹 EZVIZ – Gỡ Quảng Cáo Video
+- **Mô tả:** Chặn toàn bộ quảng cáo trong ứng dụng xem video EZVIZ (萤石云视频).
+- **Tác giả:** 可莉🅥  
+---
+
+## ⛅ Caiyun Weather Pro – Mở Khóa SVIP & Gỡ Quảng Cáo
+- **Mô tả:** Chặn quảng cáo trong ứng dụng Caiyun Weather, mở khóa các tính năng SVIP (chỉ hoạt động với phiên bản dưới 7.20.2).
+- **Tác giả:** RuCu6, Keywos, 可莉🅥  
+---
+
+## 📢 Phân phối bởi:
+> **Nightmarket Server**  
+> 💬 Discord: [https://discord.gg/juY9tw5AJY](https://discord.gg/juY9tw5AJY)  
+> 🌐 Cập nhật liên tục các `.sgmodule` Việt hóa, dễ dùng, an toàn.
 ---
 
 📌 **Lưu ý:**  
