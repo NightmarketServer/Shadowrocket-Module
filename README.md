@@ -7,14 +7,11 @@
 > Nếu chia sẻ, **vui lòng ghi rõ nguồn hoặc tên tác giả**.  
 
 ---
-# 📦 Nightmarket sgmodule Collection
+# 📦 Nightmarket Shadowrocket Collection
 Tổng hợp các script `.sgmodule` dành cho Loon/Surge/Stash — đã được Việt hóa và chuẩn hóa theo phong cách Nightmarket.
 
 > 🛠 **Phân phối bởi:** [Nightmarket Server](https://discord.gg/juY9tw5AJY)  
 ---
-
----
-
 ## ☁️ 1.1.1.1 with WARP – Cloudflare
 - **Mô tả:** WARP – bảng điều khiển giám sát & trích xuất thông tin node.
 - **Tác giả:** VirgilClyne & R·E  
