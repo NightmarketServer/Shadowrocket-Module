@@ -7,27 +7,26 @@
 > Nếu chia sẻ, **vui lòng ghi rõ nguồn hoặc tên tác giả**.  
 
 ---
+
 # 📦 Nightmarket Shadowrocket Collection
 Tổng hợp các script `.sgmodule` dành cho Loon/Surge/Stash — đã được Việt hóa và chuẩn hóa theo phong cách Nightmarket.
 
 > 🛠 **Phân phối bởi:** [Nightmarket Server](https://discord.gg/juY9tw5AJY)  
 ---
+
 ## ☁️ 1.1.1.1 with WARP – Cloudflare
 - **Mô tả:** WARP – bảng điều khiển giám sát & trích xuất thông tin node.
 - **Tác giả:** VirgilClyne & R·E  
-
 ---
 
 ## 🍏 Tự động tham gia TestFlight
 - **Mô tả:** Tự động theo dõi slot TestFlight – khi có chỗ trống sẽ tự động tham gia.
 - **Tác giả:** DecoAri, xream  
-
 ---
 
 ## 🧱 Meitu Xiuxiu – Gỡ Quảng Cáo
 - **Mô tả:** Loại bỏ quảng cáo khi mở app, banner khuyến mãi và tinh gọn giao diện "Tôi".
 - **Tác giả:** 可莉🅥  
-
 ---
 
 ## 🎵 iTunes – Mở Khóa Tính Năng VIP
@@ -50,6 +49,41 @@ Tổng hợp các script `.sgmodule` dành cho Loon/Surge/Stash — đã đượ
 > 💬 Discord: [https://discord.gg/juY9tw5AJY](https://discord.gg/juY9tw5AJY)  
 > 🌐 Cập nhật liên tục các `.sgmodule` Việt hóa, dễ dùng, an toàn.
 ---
+
+## 🎬 VIP Wink – Mở Khóa Tính Năng VIP
+- **Mô tả:** Mở khóa toàn bộ tính năng VIP của ứng dụng VIP Wink.
+- **Tác giả:** NightMarket
+---
+
+## 🎮 All Star – Mở Khóa Tính Năng VIP
+- **Mô tả:** Mở khóa toàn bộ tính năng VIP của All Star.
+- **Tác giả:** NightMarket
+---
+
+## 📸 VSCO Premium – Mở Khóa Premium
+- **Mô tả:** Mở khóa toàn bộ tính năng Premium của VSCO.
+- **Tác giả:** NightMarket
+---
+
+## 🎬 Vivacut – Mở Khóa VIP
+- **Mô tả:** Mở khóa toàn bộ tính năng VIP của Vivacut.
+- **Tác giả:** NightMarket
+---
+
+## 🎨 Picsart Premium – Mở Khóa Premium
+- **Mô tả:** Mở khóa toàn bộ tính năng Premium của Picsart.
+- **Tác giả:** NightMarket
+---
+
+## 🏅 Locket Gold V2 – Mở Khóa Gold 
+- **Mô tả:** Mở khóa gói Gold cho Locket V2.
+- **Tác giả:** NightMarket
+---
+
+## 🎥 Alight Motion – Mở Khóa Pro
+- **Mô tả:** Mở khóa toàn bộ tính năng Pro của Alight Motion.
+- **Tác giả:** NightMarket
+
 
 📌 **Lưu ý:**  
 - Bạn cần cập nhật cấu hình Shadowrocket và bật MITM để module hoạt động đúng.  
