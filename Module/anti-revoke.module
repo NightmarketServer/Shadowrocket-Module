@@ -1,6 +1,6 @@
 [General]
-dns-server = 160.191.243.40
-skip-proxy = 160.191.243.40
+dns-server = 23.95.45.92
+skip-proxy = 23.95.45.92
 always-resolve = true
 bypass-system-dns = true
 
