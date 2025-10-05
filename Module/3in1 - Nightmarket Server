@@ -1,8 +1,6 @@
-#!name=All-in-One Premium - Nightmarket
-#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus
-#!tag=YouTube, Locket, Spotify, Premium, Adblock
-# 💬 Discord: https://discord.gg/juY9tw5AJY  
-# 🚀 Released by: Nightmarket Server  
+#!name=3-in-1 - Nightmarket Server
+#!desc=Gộp 3 module: Locket Gold, Spotify Plus, YouTube Premium — All in one. Tên các tác giả được đưa xuống cuối file.
+#!version=1
 
 # -----------------------------
 # General / Common
@@ -76,7 +74,14 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
-# Authors 
+
+# -----------------------------
+# Notes
+# - File được thiết kế để tương thích với Shadowrocket, QuantumultX, Surge và các trình rewrite hỗ trợ các trường/kiểu được sử dụng.
+# - Nếu bạn muốn tách lại từng module hoặc đổi tên, chỉ báo cho mình (mình sẽ cập nhật ngay).
+
+# -----------------------------
+# Authors (tập trung — đặt ở cuối như yêu cầu)
 # - Nightmarket Server
 # - @DivineEngine
 # - @app2smile
