@@ -1,4 +1,3 @@
-
 const url = $request.url;
 
 // ======= Helper functions =======
