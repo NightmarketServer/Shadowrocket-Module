@@ -1,8 +1,3 @@
- * @name Truecaller Gold Unlock
- * @description Giả lập tài khoản Gold Lifetime
- * @version 3.1
- * @author
- */
 
 const url = $request.url;
 
