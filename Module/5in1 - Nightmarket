@@ -1,3 +1,8 @@
+#!name=5in1 - Nightmarket (VSCO, PicsArt, Alight Motion, Spotify, Wink)
+#!desc=Gói script unlock premium cho nhiều app (VSCO, PicsArt, Alight Motion, Spotify, Wink, v.v.) qua MITM và RevenueCat bypass.
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
+
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
@@ -43,3 +48,7 @@ Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, premium*.truecaller.com, sub.store, api.revenuecat.com, spclient.wg.spotify.com, api-mobile.soundcloud.com
+
+lonely0811 → phần YouTube
+app2smile → phần Spotify
+veteneso → phần SoundCloud, Revenuecat, Truecaller
