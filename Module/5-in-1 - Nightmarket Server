@@ -1,5 +1,5 @@
-#!name=3in1 - Nightmarket Server
-#!desc=Gộp 3 module: Locket Gold, Spotify Plus, YouTube Premium — All in one.
+#!name=5-in-1 - Nightmarket Server
+#!desc=Gộp 5 module: Locket Gold, Spotify Plus, YouTube Premium, Meitu, Wink — All in one.
 #!version=1
 
 # -----------------------------
@@ -48,6 +48,36 @@ deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 hostname = api.revenuecat.com, raw.githubusercontent.com
 
 # -----------------------------
+# Meitu XiuXiu – Nightmarket
+# -----------------------------
+[Script]
+meitu-vip = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.xiuxiu\.meitu\.com\/v\d\/common\/config\.json 'delpaths([["data","home_top_live"],["data","splashControl"]])'
+http-response-jq ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/operation_icon\.json 'delpaths([["data","home_top_icon"]])'
+http-response-jq ^https:\/\/api\.posters\.meitu\.com\/common\/init\.json 'delpaths([["data","vip"]])'
+http-response-jq ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/home\.json 'delpaths([["data",0,"items",10],["data",1,"scheme"],["data",1,"wallet_title"],["data",1,"items",1],["data",2,"items",1]])'
+
+[Map Local]
+^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/vip\/sub_popup\.json data-type=text data="{}" status-code=200
+^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/vip\/popup_show\.json data-type=text data="{}" status-code=200
+^https:\/\/api\.posters\.meitu\.com\/homepage\/leaflets\.json\? data-type=text data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, tool.xiuxiu.meitu.com, api.posters.meitu.com
+
+# -----------------------------
+# Wink – Nightmarket
+# -----------------------------
+[Script]
+wink-vip = type=http-response,pattern=^https?:\/\/api\.wink\.com\/v\d\/(vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/NightmarketServer/Wink/main/winkvip.js
+
+[MITM]
+hostname = %APPEND% api.wink.com
+
+# -----------------------------
 # Author
 # -----------------------------
 # 👤 Author: NightmarketServer
+# 💬 Discord: https://discord.gg/juY9tw5AJY
