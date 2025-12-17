@@ -1,0 +1,66 @@
+#!name=Meitu XiuXiu VIP Unlock – Nightmarket Edition
+# desc=💬 Chỉ fake VIP + mở phần OFFLINE (filter, sticker, frame…)
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
+// 👤 Mod by: Nightmarket
+// ⚠️ Không unlock AI / cloud để tránh app lỗi
+
+let url = $request.url;
+let body = $response.body;
+
+try {
+  let obj = JSON.parse(body);
+
+  // Helper: gán trạng thái VIP “đẹp và an toàn”
+  function applyVIP(data) {
+    if (!data || typeof data !== "object") return;
+
+    data.is_vip = true;
+    data.vip_type = 4;          // 4 = kiểu VIP cao (Gold)
+    data.old_vip_type = 4;
+    data.sub_type = 8;          // 8 = gói năm
+    data.is_expire = 0;         // 0 = chưa hết hạn
+    data.expire_days = -999;    // ngày âm = không quan trọng nhưng tránh bị check kỳ
+    data.valid_time = 4070880000;   // timestamp ~ 2099
+    data.invalid_time = 0;
+    data.screen_name = "Nightmarket VIP";
+  }
+
+  // 1. Chi tiết VIP (trang sub detail)
+  if (url.includes("/v1/h5/vip/sub_detail")) {
+    if (obj.data) applyVIP(obj.data);
+  }
+
+  // 2. Thông tin tài khoản (Meitu thường check VIP ở đây)
+  if (url.includes("/v1/account/verify_credentials")) {
+    if (obj.data) {
+      applyVIP(obj.data);
+      obj.data.free_trial = 1;      // đánh dấu từng dùng trial, tránh bug
+    }
+  }
+
+  // 3. Một số API khác về sub_info (nếu có)
+  if (url.includes("/v1/h5/vip/sub_info")) {
+    if (obj.data) applyVIP(obj.data);
+  }
+
+  // 4. Trang home VIP – chỉ chỉnh text, không động vào logic
+  if (url.includes("/v1/h5/vip/home")) {
+    // Một số bản trả về dạng { data: {...} }, một số là key trực tiếp
+    let target = obj.data || obj;
+
+    if (target) {
+      target.home_prompt = "VIP của bạn sẽ hết hạn vào 2099/01/01.";
+      target.home_btn_prompt = "";
+      target.beautify_btn_prompt = "";
+      target.beautify_prompt = "";
+    }
+  }
+
+  body = JSON.stringify(obj);
+} catch (e) {
+  // Nếu parse lỗi thì trả body gốc cho an toàn
+  console.log("Meitu VIP Nightmarket: JSON parse error -> fallback original");
+}
+
+$done({ body });
